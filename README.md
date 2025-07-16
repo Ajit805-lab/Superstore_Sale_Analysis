@@ -16,7 +16,8 @@
     
 ## 📷 Dataset Overview
 
-
+<img width="1160" height="652" alt="Screenshot 2025-07-16 095236" src="https://github.com/user-attachments/assets/e314c3a1-530b-4125-82b4-a93a3478cde6" />
+    
 ## 🎯 Objectives
     Compare sales and profit between Q3 and Q4 (2015)
 
@@ -58,6 +59,35 @@
     Background Color: Light gray #F5F5F5 for modern, distraction-free view
     
     Responsive layout with visual alignment and grid consistency
+    
+## 🛠️ Data Transformation & ETL process 
+
+#### 🟢 Step 1: Download the Dataset
+    Installed the Superstore dataset from Kaggle.
+
+#### 🟢 Step 2: Load Data into Power Query Editor
+    Imported the dataset into Power BI and opened it in Power Query Editor for preprocessing.
+
+#### 🟢 Step 3: Data Understanding & Quality Check
+    Explored the structure of the dataset.
+
+    Checked column data types, null values, column quality, and column distribution to understand the data.
+
+#### 🟢 Step 4: Data Cleaning & Transformation
+    Performed the following steps in Power Query:
+
+    Removed null values and duplicate rows
+    
+    Renamed columns for clarity
+    
+    Changed data types appropriately
+    
+    Created calculated columns (e.g., Year, Quarter, Profit Margin)
+    
+    Reorganized into a clean tabular format for better analysis
+
+#### 🟢 Step 5: Load Cleaned Data into Power BI Model
+    After transformation, loaded the cleaned dataset into Excel sheet
 
 ## 🛠 Tools & Technologies
     Power BI Desktop
@@ -69,29 +99,47 @@
     Basic ETL with filtering, formatting, and type conversion
     
 ## 📌 DAX Highlights
-
-
-
-
-
+    Total_Profit = sum(Super_Store1[Profit])
+    
+    Total_Sale = sum(Super_Store1[Sales])
+    
+    2015_Q3_Sale = calculate([Total_Sale],YEAR(Super_Store1[Order Date])=2015,Super_Store1[Quarter]=3)
+    
+    2015_Q4_Sale = calculate([Total_Sale],year(Super_Store1[Order Date])=2015,Super_Store1[Quarter]=4)
+    
+    2015_Q3_Profit = calculate([Total_Profit] ,year(Super_Store1[Order Date])=2015,Super_Store1[Quarter]=3)
+    
+    2015_Q4_Sale = calculate([Total_Sale],year(Super_Store1[Order Date])=2015,Super_Store1[Quarter]=4)
+    
+    Change_profit = Super_Store1[2015_Q4_Profit]-Super_Store1[2015_Q3_Profit]
+    
+    Change_sale = Super_Store1[2015_Q4_Sale]-Super_Store1[2015_Q3_Sale]
+    
+    Growth_Q4_vs_Q3_2015_Profit = divide(Super_Store1[2015_Q4_Profit]-Super_Store1[2015_Q3_Profit],Super_Store1[2015_Q3_Profit])*100
+    
+    Growth_Q4_vs_Q3_2015_sale = divide(Super_Store1[2015_Q4_Sale]-Super_Store1[2015_Q3_Sale],Super_Store1[2015_Q3_Sale])*100
+    
 ## 💡 Insights Uncovered
-    Q4 sales increased by ~40%, with profit up by ~38% compared to Q3.
+    🔹 Q4 sales increased by ~40%, with profit up by ~38% compared to Q3.
     
-    Appliances and Copiers showed the highest profit growth.
+    🔹 Appliances, Copiers, Fasteners, Accessories, Envelopes showed the highest profit growth.
     
-    Furnishings had a negative profit change.
+    🔹 Blinders, Supplies, Bookcases, Machines, and Storage were the top 5 sub-categories that experienced a negative profit change during the selected period. 
     
-    Consumer segment contributed the largest share of total profit.
-
+    🔹 Consumer segment contributed the largest share of total profit.
+    
+    🔹 The South region underperformed compared to other regions in terms of sales and profit.
+    
 ## 📬 Contact / Credits
-    Author: Ajit Kumar Samal
-    
-    LinkedIn: [Your LinkedIn URL]
-    
-    GitHub: [Your GitHub URL]
-    
-    Email: ajitkumarofficial79@gmail.com
-       
+Author: Ajit Kumar Samal
+
+LinkedIn: www.linkedin.com/in/ajitkumarsamal
+
+GitHub: https://github.com/Ajit805-lab
+
+Email: ajitkumarofficial79@gmail.com
+
+
        
     
     
