@@ -1,6 +1,6 @@
 # 📊 Superstore_Sale_Analysis – Power BI Dashboard Project
 
-## 🔍 OverView
+## 🔍 Overview
     Superstore_Sale_Analysis is an interactive Power Bi dashboard built using a retail dataset to analyze the sales and 
     
     profit trends across different time periods, region, categories. The project provides  key insights into business performance 
@@ -13,6 +13,9 @@
     Data Attributes: Order Date, Sales, Profit, Region, Segment, Category, Sub-Category, city, 
     
     State, Country, Quantity, Discount
+    
+## 📷 Dataset Overview
+
 
 ## 🎯 Objectives
     Compare sales and profit between Q3 and Q4 (2015)
