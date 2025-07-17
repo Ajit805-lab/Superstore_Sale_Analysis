@@ -1,4 +1,4 @@
-# 📊 Superstore_Sale_Analysis – Power BI Dashboard 
+# 📊 Superstore_Sale_Analysis
 
 ## 🔍 Overview
     Superstore_Sale_Analysis is an interactive Power Bi dashboard built using a retail dataset to analyze the sales and 
