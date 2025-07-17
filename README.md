@@ -70,9 +70,9 @@ Profit Change
 <img width="515" height="425" alt="Screenshot 2025-07-17 095748" src="https://github.com/user-attachments/assets/52bc0927-c6f6-4ff2-a504-b0ab9de872f6" />
 
 ## 📈 KPIs Displayed
-    🔹 Total_Sale_2015_Q3, Total_Sale_2015_Q4
+    🔹 Sale (Q3 2015), Sale (Q4 2015)
 
-    🔹 Total_Profit_2015_Q3, Total_Profit_2015_Q4
+    🔹 Profit (Q3 2015), Profit (Q4 2015)
 
     🔹 Sale Change %, Profit Change %
 
@@ -127,25 +127,25 @@ Profit Change
     Basic ETL with filtering, formatting, and type conversion
     
 ## 📌 DAX Highlights
-    Total_Profit = sum(Super_Store1[Profit])
-    
     Total_Sale = sum(Super_Store1[Sales])
     
-    2015_Q3_Sale = calculate([Total_Sale],YEAR(Super_Store1[Order Date])=2015,Super_Store1[Quarter]=3)
+    Total_Profit = sum(Super_Store1[Profit])
     
-    2015_Q4_Sale = calculate([Total_Sale],year(Super_Store1[Order Date])=2015,Super_Store1[Quarter]=4)
+    Sale(Q3 2015) = calculate([Total_Sale],YEAR(Super_Store1[Order Date])=2015,Super_Store1[Quarter]=3)
+
+    Sale(Q4 2015) = calculate([Total_Sale],year(Super_Store1[Order Date])=2015,Super_Store1[Quarter]=4) 
+     
+    Profit(Q3 2015) = calculate([Total_Profit] ,year(Super_Store1[Order Date])=2015,Super_Store1[Quarter]=3)
     
-    2015_Q3_Profit = calculate([Total_Profit] ,year(Super_Store1[Order Date])=2015,Super_Store1[Quarter]=3)
+    Profit(Q4 2015) = calculate([Total_Profit] ,year(Super_Store1[Order Date])=2015,Super_Store1[Quarter]=4)
     
-    2015_Q4_Sale = calculate([Total_Sale],year(Super_Store1[Order Date])=2015,Super_Store1[Quarter]=4)
+    Change_sale = Super_Store1[Sale(Q4 2015)]-Super_Store1[Sale(Q3 2015)]
     
-    Change_profit = Super_Store1[2015_Q4_Profit]-Super_Store1[2015_Q3_Profit]
+    Change_profit = Super_Store1[Profit(Q4 2015)]-Super_Store1[Profit(Q3 2015)]
+
+    Growth_Q4_vs_Q3_2015_sale = divide(Super_Store1[Sale(Q4 2015)]-Super_Store1[Sale(Q3 2015)],Super_Store1[Sale(Q3 2015)])
     
-    Change_sale = Super_Store1[2015_Q4_Sale]-Super_Store1[2015_Q3_Sale]
-    
-    Growth_Q4_vs_Q3_2015_Profit = divide(Super_Store1[2015_Q4_Profit]-Super_Store1[2015_Q3_Profit],Super_Store1[2015_Q3_Profit])*100
-    
-    Growth_Q4_vs_Q3_2015_sale = divide(Super_Store1[2015_Q4_Sale]-Super_Store1[2015_Q3_Sale],Super_Store1[2015_Q3_Sale])*100
+    Growth_Q4_vs_Q3_2015_Profit = divide(Super_Store1[Profit(Q4 2015)]-Super_Store1[Profit(Q3 2015)],Super_Store1[Profit(Q3 2015)])
     
 ## 💡 Insights Uncovered
     🔹 Q4 sales increased by ~40%, with profit up by ~38% compared to Q3.
