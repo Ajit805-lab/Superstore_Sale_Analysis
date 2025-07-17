@@ -16,7 +16,7 @@
     
 ## 📷 Dataset Overview
 
-<img width="1160" height="652" alt="Screenshot 2025-07-16 095236" src="https://github.com/user-attachments/assets/e314c3a1-530b-4125-82b4-a93a3478cde6" />
+<img width="1170" height="625" alt="Screenshot 2025-07-17 100056" src="https://github.com/user-attachments/assets/ffe6fcb2-a13d-4969-859b-5af8acdd0a77" />
     
 ## 🎯 Objectives
     Compare sales and profit between Q3 and Q4 (2015)
@@ -31,16 +31,44 @@
 
 ## 📊 Key Visualizations
     
-    Cards KPIs for Total Sales & Profit in Q3 and Q4
-    
-    Line Chart Month-wise sales & profit trend comparison
-    
-    Bar Chart Sub-category wise profit growth (Q4 vs Q3)
-    
-    Pie / Doughnut Charts Profit breakdown by Category and Segment
-    
-    Slicers	Region-wise analysis and interactivity
-    
+#### Cards KPIs for Total Sales & Profit in Q3 and Q4
+Sale (Q3 2015)
+
+<img width="319" height="245" alt="Screenshot 2025-07-17 092241" src="https://github.com/user-attachments/assets/2868760f-9cd8-4e20-ba35-9fb1b496ee6d" />
+
+Sale (Q4 2015)
+
+<img width="312" height="254" alt="Screenshot 2025-07-17 092349" src="https://github.com/user-attachments/assets/937bf5d7-8ce8-44fc-8d7e-a0c470ab86bd" />
+
+Sale Change
+
+<img width="312" height="254" alt="Screenshot 2025-07-17 092349" src="https://github.com/user-attachments/assets/76be3da9-9e87-4e2f-a1ea-74586edd52bd" />
+
+Profit (Q3 2015)
+
+<img width="312" height="230" alt="Screenshot 2025-07-17 093220" src="https://github.com/user-attachments/assets/4381aeba-73b4-424d-bde2-a1f4de9cb688" />
+
+
+Profit (Q4 2015)
+
+<img width="339" height="229" alt="Screenshot 2025-07-17 093253" src="https://github.com/user-attachments/assets/06da4fa1-a931-4251-a29d-c24b4e8ad961" />
+
+Profit Change
+
+<img width="332" height="232" alt="Screenshot 2025-07-17 093329" src="https://github.com/user-attachments/assets/2f0fc2d1-9f47-4ab0-b861-5341bff28f1d" />
+
+#### Line Chart Month-wise sales & profit trend comparison
+<img width="774" height="391" alt="Screenshot 2025-07-17 095221" src="https://github.com/user-attachments/assets/6fa657c4-7744-46ca-aec2-419545e2b967" />
+
+#### Bar Chart Sub-category wise profit growth (Q4 vs Q3)
+<img width="740" height="493" alt="Screenshot 2025-07-17 095418" src="https://github.com/user-attachments/assets/46dda41e-b1c4-4059-8a6e-dc53ae6f897d" />
+
+#### Doughnut Charts Profit breakdown by Category and Segment
+<img width="567" height="402" alt="image" src="https://github.com/user-attachments/assets/7968488d-db7d-44d6-8e88-26a6631f4775" />
+
+#### Pie Charts Profit breakdown by Category and Segment
+<img width="515" height="425" alt="Screenshot 2025-07-17 095748" src="https://github.com/user-attachments/assets/52bc0927-c6f6-4ff2-a504-b0ab9de872f6" />
+
 ## 📈 KPIs Displayed
     🔹 Total_Sale_2015_Q3, Total_Sale_2015_Q4
 
