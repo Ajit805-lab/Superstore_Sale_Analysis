@@ -48,7 +48,6 @@ Profit (Q3 2015)
 
 <img width="312" height="230" alt="Screenshot 2025-07-17 093220" src="https://github.com/user-attachments/assets/4381aeba-73b4-424d-bde2-a1f4de9cb688" />
 
-
 Profit (Q4 2015)
 
 <img width="339" height="229" alt="Screenshot 2025-07-17 093253" src="https://github.com/user-attachments/assets/06da4fa1-a931-4251-a29d-c24b4e8ad961" />
